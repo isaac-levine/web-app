@@ -119,7 +119,7 @@ export function Navbar() {
               <SignedOut>
                 <Button
                   variant="ghost"
-                  className="w-full text-zinc-400 hover:text-white hover:bg-transparent transition-colors"
+                  className="w-full text-zinc-400 hover:text-white hover:bg-transparent transition-colors mb-2"
                   asChild
                 >
                   <SignInButton mode="modal" />
@@ -134,7 +134,7 @@ export function Navbar() {
               <SignedIn>
                 <Button
                   variant="ghost"
-                  className="w-full text-zinc-400 hover:text-white hover:bg-transparent transition-colors"
+                  className="w-full text-zinc-400 hover:text-white hover:bg-transparent transition-colors mb-2"
                   asChild
                 >
                   <Link href="/dashboard">Dashboard</Link>
