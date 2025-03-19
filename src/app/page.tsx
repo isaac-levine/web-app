@@ -98,15 +98,15 @@ export default function Home() {
       </Container>
 
       {/* CTA Section */}
-      <Container>
-        <div className="flex flex-col items-center text-center py-24 border-t border-zinc-800">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Ready to level up your prompt engineering?
-          </h2>
-          <p className="text-xl text-zinc-400 mb-8 max-w-2xl">
-            Join the waitlist to be among the first to experience PromptLens.
-          </p>
-          <SignedOut>
+      <SignedOut>
+        <Container>
+          <div className="flex flex-col items-center text-center py-24 border-t border-zinc-800">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Ready to level up your prompt engineering?
+            </h2>
+            <p className="text-xl text-zinc-400 mb-8 max-w-2xl">
+              Join the waitlist to be among the first to experience PromptLens.
+            </p>
             <Button
               size="lg"
               className="text-lg bg-white text-black hover:bg-zinc-200"
@@ -115,9 +115,9 @@ export default function Home() {
               Join the Waitlist
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-          </SignedOut>
-        </div>
-      </Container>
+          </div>
+        </Container>
+      </SignedOut>
     </main>
   );
 }

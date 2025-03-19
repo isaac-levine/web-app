@@ -81,7 +81,7 @@ export function Navbar() {
             <SignedIn>
               <Button
                 variant="ghost"
-                className="text-zinc-400 hover:text-white"
+                className="text-zinc-400 hover:text-white hover:bg-transparent transition-colors"
                 asChild
               >
                 <Link href="/dashboard">Dashboard</Link>
