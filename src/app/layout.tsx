@@ -30,11 +30,7 @@ export default function RootLayout({
       waitlistUrl="https://promptlens.clerk.com/waitlist"
     >
       <html lang="en" className="bg-black text-white">
-        <body className={inter.className}>
-          <Navbar />
-          {children}
-          <Footer />
-        </body>
+        <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>
   );
