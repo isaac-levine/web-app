@@ -12,23 +12,6 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { openWaitlist } = useClerk();
 
-  const handleOpenWaitlist = () => {
-    openWaitlist({
-      appearance: {
-        elements: {
-          rootBox: "bg-black",
-          card: "bg-zinc-900 border border-zinc-800",
-          headerTitle: "text-white",
-          headerSubtitle: "text-zinc-400",
-          formButtonPrimary: "bg-white text-black hover:bg-zinc-200",
-          formFieldInput: "bg-zinc-800 border-zinc-700 text-white",
-          formFieldLabel: "text-zinc-400",
-          footer: "hidden",
-        },
-      },
-    });
-  };
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800">
       <Container>
@@ -73,7 +56,7 @@ export function Navbar() {
               </Button>
               <Button
                 className="bg-white text-black hover:bg-zinc-200"
-                onClick={handleOpenWaitlist}
+                onClick={() => openWaitlist()}
               >
                 Join Waitlist
               </Button>
@@ -143,7 +126,7 @@ export function Navbar() {
                 </Button>
                 <Button
                   className="w-full bg-white text-black hover:bg-zinc-200"
-                  onClick={handleOpenWaitlist}
+                  onClick={() => openWaitlist()}
                 >
                   Join Waitlist
                 </Button>
