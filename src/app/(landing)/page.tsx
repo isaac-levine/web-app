@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
-import { ArrowRight, BarChart2, Database, Zap } from "lucide-react";
+import { BarChart2, Database, Zap } from "lucide-react";
 import Image from "next/image";
 import { Waitlist } from "@clerk/nextjs";
 
