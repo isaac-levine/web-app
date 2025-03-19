@@ -1,3 +1,4 @@
+import { Footer } from "@/components/ui/footer";
 import { Navbar } from "@/components/ui/navbar";
 
 export default function LandingLayout({
@@ -9,6 +10,7 @@ export default function LandingLayout({
     <>
       <Navbar />
       {children}
+      <Footer />
     </>
   );
 }
