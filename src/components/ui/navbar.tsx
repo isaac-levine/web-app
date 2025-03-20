@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { Menu } from "lucide-react";
+import { Menu, Github } from "lucide-react";
 import { useState } from "react";
 import { SignInButton, UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import { useClerk } from "@clerk/nextjs";
@@ -46,6 +46,14 @@ export function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            <Link
+              href="https://github.com/promptlens/promptlens-ts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-400 hover:text-white transition-colors"
+            >
+              <Github className="h-5 w-5" />
+            </Link>
             <SignedOut>
               <Button
                 variant="ghost"
@@ -80,7 +88,15 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-4">
+            <Link
+              href="https://github.com/promptlens/promptlens-ts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-400 hover:text-white transition-colors"
+            >
+              <Github className="h-5 w-5" />
+            </Link>
             <Button
               variant="ghost"
               size="icon"

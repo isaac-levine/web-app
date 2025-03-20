@@ -1,24 +1,42 @@
-import { Terminal, LineChart, GitBranch } from "lucide-react";
+import { Beaker, LineChart, History, Code, Shield, Bug } from "lucide-react";
 
 export function Features() {
   const features = [
     {
-      icon: <Terminal className="h-6 w-6 text-white" />,
+      icon: <Beaker className="h-6 w-6 text-white" />,
       title: "A/B Testing",
       description:
-        "Run controlled experiments with different prompt variations. Make data-driven decisions about your AI features.",
+        "Split test different prompt variations with controlled experiments. Compare performance and costs across multiple LLM providers.",
     },
     {
       icon: <LineChart className="h-6 w-6 text-white" />,
-      title: "Real-time Monitoring",
+      title: "Performance Analytics",
       description:
-        "Track response times, token usage, and custom metrics. Get alerts when your prompts aren't performing.",
+        "Track response quality, latency, and costs in real-time. Set custom KPIs and get alerted when metrics drift.",
     },
     {
-      icon: <GitBranch className="h-6 w-6 text-white" />,
+      icon: <History className="h-6 w-6 text-white" />,
       title: "Version Control",
       description:
-        "Keep track of prompt changes and roll back when needed. Perfect for team collaboration.",
+        "Track prompt changes with git-like versioning. Compare results across versions and rollback when needed.",
+    },
+    {
+      icon: <Code className="h-6 w-6 text-white" />,
+      title: "Simple Integration",
+      description:
+        "Drop-in SDK for Python, Node.js, and REST API. Just wrap your existing LLM calls with our testing framework.",
+    },
+    {
+      icon: <Shield className="h-6 w-6 text-white" />,
+      title: "Guardrails & Safety",
+      description:
+        "Automatically detect harmful, biased, or off-brand responses. Define custom content policies and filters.",
+    },
+    {
+      icon: <Bug className="h-6 w-6 text-white" />,
+      title: "Debug & Replay",
+      description:
+        "Inspect full conversation traces, replay historical requests, and debug edge cases with detailed logs.",
     },
   ];
 
